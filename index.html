@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanimozhi Subramanian | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- AOS Animate On Scroll CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      margin-top: 8px;
+      background-color: #8b5cf6;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .skill-tag {
+      background: #f3f4f6;
+      padding: 8px 16px;
+      margin: 6px;
+      display: inline-block;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .skill-tag:hover {
+      background-color: #8b5cf6;
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+  <!-- AOS Animate On Scroll JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // only animate once while scrolling down
+    });
+  </script>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/images/profile.png" class="rounded-circle" width="40" height="40" alt="Logo" />
+        <span class="fw-bold">Kanimozhi</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-lg-flex justify-content-end" style="visibility: visible" id="navbarNav">
+        <ul class="navbar-nav d-flex flex-row gap-4 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certifications">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero-section d-flex">
+    <div class="pattern-overlay">
+      <svg class="wave parallax" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path class="wave1" d="M0,160 C480,280 960,40 1440,160 L1440,320 L0,320 Z" fill="#8b5cf6" fill-opacity="0.1" />
+        <path class="wave2" d="M0,200 C480,300 960,60 1440,200 L1440,320 L0,320 Z" fill="#8b5cf6" fill-opacity="0.05" />
+      </svg>
+    </div>
+
+    <div class="social-icons d-none d-md-flex flex-column align-items-center justify-content-center">
+      <a href="https://github.com/Kani042" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/kanimozhi-subramanian-29745143/" target="_blank"><i
+          class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="hero-content text-center w-100">
+        <h1 class="display-4 fw-bold">Hi, I'm Kanimozhi</h1>
+        <p class="lead mt-3">
+          Data Analyst • Data Scientist • Data Engineer • Senior Software Engineer
+        </p>
+        <!-- <a href="#projects" class="btn btn-animated mt-4"> Projects</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="text-center pt-5 creame-bg">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="mt-4 w-75 mx-auto">
+        I am a passionate and results-driven Data Scientist, Data Analyst and Data Engineer with over 9 years
+        of experience in software development, data processing, and machine learning. I hold a Master
+        of Science in Data Science from Thompson Rivers University, British Columbia. With a strong
+        background in Python, SQL, Azure, and full-stack development using Java and Spring Boot,
+        I specialize in building scalable data pipelines, cloud solutions, and insightful analytics.
+        I thrive on solving real-world problems with technology and am committed to continuous learning and innovation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="about" class="py-5 ml-4 mr-4 creame-bg">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Column -->
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+          <h2 class="fw-bold mb-3">Get to know me!</h2>
+          <p>
+            I'm a <strong>Passionate Data Analyst | Microservices Backend Developer</strong>
+          </p>
+          <p>
+            I also like sharing content...
+            <a href="#" class="text-purple-600 fw-bold">LinkedIn</a> and
+            <a href="#" class="text-purple-600 fw-bold">Instagram</a>.
+          </p>
+          <p>I'm open to <strong>Job</strong> opportunities...</p>
+        </div>
+        <!-- Right Column -->
+        <div class="col-lg-6 text-lg-start text-center" data-aos="fade-left">
+          <h2 class="fw-bold mb-3">My Skills</h2>
+          <div class="d-flex flex-wrap justify-content-lg-start justify-content-center gap-3">
+            <span class="skill-pill">Pyspark</span>
+            <span class="skill-pill">Azure</span>
+            <span class="skill-pill">Azure DataFactory</span>
+            <span class="skill-pill">Azure Synapse</span>
+            <span class="skill-pill">R</span>
+            <span class="skill-pill">Tableau</span>
+            <span class="skill-pill">Power BI</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Azure DataBricks</span>
+            <span class="skill-pill">Tensorflow</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">COBOL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Certifications-->
+  <section id="certifications" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title d-inline-block">Certifications</h2>
+      </div>
+      <div class="row justify-content-center" data-aos="zoom-in">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card shadow-sm border-0 rounded-3 h-100 hover-effect">
+            <div class="card-body text-center">
+              <img src="assets/images/cert.png" class="img-fluid mb-3 rounded" alt="Project 1" />
+              <h5 class="card-title mb-3"><b>Microsoft Certified: Azure Data Engineer Associate</b></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="education" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title d-inline-block">Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-content">
+            <h3><b>Master of Science in Data Science</b></h3>
+            <p>Thompson Rivers University, British Columbia, Canada</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="icon"><i class="fas fa-user-graduate"></i></div>
+          <div class="timeline-content">
+            <h3><b>Bachelor of Engineering in Computer Science</b></h3>
+            <p>Anna University, Chennai, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title d-inline-block">Projects</h2>
+      </div>
+      <div class="row g-4">
+        <!-- Project Card 1 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <!-- FRONT -->
+              <div class="flip-card-front">
+                <div class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
+                  <img src="assets/images/project1.png" class="img-fluid mb-3 rounded" alt="Project 1" />
+                  <h6 class="fw-bold text-left text-muted">Customer Loyalty, Segmentation and Churn Analysis using RFM
+                  </h6>
+                  <br />
+                  <h5 class="mb-2 text-left"><b>Tools Used:</b> Azure DataFactory, Azure Databricks, PySpark, Tableau
+                  </h5>
+                  <br />
+                  <p style="text-align: left;">Customer Loyalty and Segmentation Analysis uses RFM (Recency, Frequency,
+                    Monetary) modeling to
+                    understand customer behavior. It helps businesses divide customers into groups based on how
+                    recently,
+                    how often, and how much they buy. High-value customers drive significant revenue through large or
+                    frequent purchases.</p>
+                </div>
+              </div>
+
+              <!-- BACK -->
+              <div class="flip-card-back">
+                <div class="card-content p-4 shadow-sm rounded-4 bg-white text-start">
+                  <h5 class="mb-3"><b>Key Insights:</b></h5>
+                  <ul class="list-unstyled text-muted small">
+                    <li><b>Customer Retention:</b> Retaining loyal customers is more cost-effective and drives long-term
+                      business growth.</li>
+                    <li><b>Spending Habits:</b> High-value customers can be incentivized to purchase more frequently,
+                      boosting revenue.</li>
+                    <li><b>Risk of Churn:</b> At-risk customers need immediate re-engagement to prevent revenue loss.
+                    </li>
+                    <li><b>Personalization Opportunity:</b> Tailor approaches to different customer groups—reward loyal
+                      customers and re-engage at-risk customers with targeted campaigns.</li>
+                  </ul>
+
+                  <h5 class="mb-3 mt-4"><b>Recommendations:</b></h5>
+                  <ul class="list-unstyled text-muted small">
+                    <li><b>For Loyal Customers:</b> Implement loyalty programs, exclusive offers, or VIP treatment to
+                      maintain engagement and increase customer lifetime value.</li>
+                    <li><b>For High-Value Customers:</b> Offer personalized discounts or early access to new products to
+                      encourage more frequent purchases.</li>
+                  </ul>
+
+                  <!-- "Learn More" GitHub Link -->
+                  <a href="https://github.com/Kani042/Customer_Segmentation_By_RFM_Analysis"
+                    class="learn-more-link mt-4" target="_blank">Learn more</a>
+
+                  <!-- Tableau Link -->
+                  <div class="mt-3">
+                    <a href="https://public.tableau.com/app/profile/kanimozhi.subramanian/viz/Sales_Customer_churn_analysis/Customerdashboard"
+                      class="learn-more-link" target="_blank">View Tableau Dashboard</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Project card2-->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <!-- FRONT -->
+              <div class="flip-card-front">
+                <div class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
+                  <img src="assets/images/project2.png" class="img-fluid mb-3 rounded" alt="Project 1" />
+                  <h6 class="fw-bold text-left text-muted" href="https://github.com/Kani042">Sales Performance Analysis
+                    for Online Retail Company</h6>
+                  <br />
+                  <h5 class="mb-2 text-left"><b>Tools Used:</b> Azure DataFactory, Azure Databricks, Pyspark, Tableau
+                  </h5>
+                  <br />
+                  <p style="text-align: left;">Performed an extensive Sales Analysis to uncover key trends, patterns,
+                    and growth opportunities.
+                    By analyzing large-scale sales data across products, regions, and time periods, I identified:
+                    Top-performing products to focus marketing and sales efforts.
+                    Underperforming regions needing targeted promotions.
+                    Seasonal demand patterns to optimize inventory and supply chain management.
+                  </p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="card-content p-4 shadow-sm rounded-4 bg-white text-start">
+                  <h5 class="mb-3"><b>Key Insights:</b></h5>
+                  <ul class="list-unstyled text-muted small">
+                    <li><b>Best-Selling Products:</b> Certain products consistently outperform others across all
+                      regions, indicating strong customer demand and brand loyalty.
+                    </li>
+                    <li><b>Underperforming Regions:</b> Specific geographic regions showed lower sales volumes,
+                      suggesting gaps in market penetration or localized marketing.</li>
+                    <li><b>Inventory Imbalance: </b> Some products were either overstocked or understocked during peak
+                      seasons, leading to lost sales opportunities or excess inventory costs.</li>
+                    <li><b>Seasonal Trends:</b> Significant fluctuations in sales were observed based on seasons and
+                      holidays, highlighting opportunities for seasonal promotions.
+                    </li>
+                  </ul>
+
+                  <h5 class="mb-3 mt-4"><b>Recommendations:</b></h5>
+                  <ul class="list-unstyled text-muted small">
+                    <li><b>Focus Marketing on High-Performing Products:</b> Increase advertising spend and promotional
+                      campaigns around best-selling products to maximize returns.</li>
+                    <li><b>Launch Targeted Regional Promotions:</b> Design localized marketing strategies and promotions
+                      to boost sales in underperforming areas.</li>
+                    <!--<li><b>Optimize Inventory Based on Seasonality:</b> Use predictive analytics to adjust inventory
+                      levels ahead of peak seasons to avoid stockouts and reduce holding costs.</li>-->
+                  </ul>
+<!-- "Learn More" GitHub Link -->
+<a href="https://github.com/Kani042/Customer_Segmentation_By_RFM_Analysis"
+class="learn-more-link mt-4" target="_blank">Learn more</a>
+
+<!-- Tableau Link -->
+<div class="mt-3">
+<a href="https://public.tableau.com/app/profile/kanimozhi.subramanian/viz/SalesDashboard_mobile/SAlesDashboard"
+  class="learn-more-link" target="_blank">View Tableau Dashboard</a>
+</div>
+</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Project card 3-->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <!-- FRONT -->
+              <div class="flip-card-front">
+                <div class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
+                  <img src="assets/images/project3.png" class="img-fluid mb-3 rounded" alt="Project 1" />
+                  <h6 class="fw-bold text-left text-muted">Lung Cancer Prediction</h6>
+                  <br />
+                  <h5 class="mb-2 text-left"><b>Tools Used:</b> R, Matplotlib, Seaborn, Pandas, NumPy, Scikit-learn
+                  </h5>
+                  <br />
+                  <p style="text-align: left;">Developed a Lung Cancer Prediction model using machine learning
+                    techniques, including Logistic Regression, Random Forest, and SVM. Performed data preprocessing,
+                    feature selection, and exploratory data analysis to identify key risk factors. Achieved high
+                    accuracy and minimized false negatives through hyperparameter tuning, supporting early detection and
+                    potential clinical decision-making.
+                  </p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="card-content p-4 shadow-sm rounded-4 bg-white text-start">
+
+                  <h5 class="mb-3"><b>Key Insights:</b></h5>
+                  <ul class="list-unstyled text-muted small">
+
+                    <li><b>Critical Risk Factors Identified:</b> Features such as smoking history, age, and chronic
+                      diseases showed strong correlations with lung cancer risk.</li>
+                    <li><b>Minimized False Negatives:</b> Prioritized recall to ensure fewer missed positive cases,
+                      which is critical in clinical applications.</li>
+                    <li><b>Model Optimization Benefits:</b> Hyperparameter tuning boosted model accuracy, precision, and
+                      recall, with Random Forest and SVM delivering the best performance.</li>
+                  </ul>
+
+                  <h5 class="mb-3 mt-4"><b>Output:</b></h5>
+                  <ul class="list-unstyled text-muted small">
+                    <li><b>Trained Machine Learning Model:</b> Final model (Random Forest/SVM) capable of predicting
+                      lung cancer risk with high accuracy and reliability.</li>
+                    <li><b>Feature Importance Analysis:</b> Identified the most influential factors contributing to
+                      predictions, aiding clinical decision-making.</li>
+                    <li><b>Actionable Healthcare Insights:</b> Model outputs designed to assist healthcare providers in
+                      identifying high-risk individuals early.</li>
+                  </ul>
+
+                  <a href="https://github.com/Kani042/Lung-Cancer-Prediction-Machine-Learning-Project" class="btn btn-animated mt-4">Learn more</a>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!--Project card 4-->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <!-- FRONT -->
+              <div class="flip-card-front">
+                <div class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
+                  <img src="assets/images/project4.png" class="img-fluid mb-3 rounded" alt="Project 1" />
+                  <h6 class="fw-bold text-left text-muted">Using AI to Manage Wireless Signal Strength and Ensure Fair
+                    Internet Speeds for Multiple Users</h6>
+                  <br />
+                  <h5 class="mb-2 text-left"><b>Tools Used:</b> TensorFlow, Matplotlib, Seaborn, Pandas, NumPy,
+                    Scikit-learn</h5>
+                  <br />
+                  <p style="text-align: left;">
+                    This research applies advanced AI techniques to optimize wireless communication, specifically power
+                    control in multi-user environments.
+                    It ensures fair internet speed distribution by dynamically adjusting transmission power, even under
+                    bandwidth contention, while strictly satisfying minimum quality (QoS) requirements.
+                  </p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="card-content p-4 shadow-sm rounded-4 bg-white text-start">
+                  <h5 class="mb-3"><b>Key Insights:</b></h5>
+                  <ul class="mb-4">
+                    <li><b>AI-driven Power Optimization:</b> Deep learning methods autonomously controlled transmission
+                      power based on environmental feedback.</li>
+                    <li><b>QoS-Conscious Adaptation:</b> Guaranteed each user met their required performance metrics
+                      such as minimum throughput or latency.</li>
+                  </ul>
+
+                  <h5 class="mb-3"><b>Output:</b></h5>
+                  <ul>
+                    <li>Practical for D2D (device-to-device) wireless networks where spectrum sharing is dynamic</li>
+                    <li>Zero retraining needed across different network conditions</li>
+                    <li>Reduced computational overhead with real-time responsiveness</li>
+                    <li><b>Achieved 100% prediction accuracy</b> in meeting QoS constraints across varied interference
+                      scenarios</li>
+                  </ul>
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10606259" class="btn btn-animated mt-4">Learn more</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 5 -->
+        <!-- Project Card 5 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+
+              <!-- FRONT -->
+              <div class="flip-card-front">
+                <div class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
+                  <img src="assets/images/project5.png" class="img-fluid mb-3 rounded" alt="Data Engineering Project" />
+                  <h6 class="fw-bold text-left text-muted">
+                    Data Engineering Project: Scalable Data Pipeline with Synapse and Azure Tools
+                  </h6>
+                  <br />
+                  <h5 class="mb-2 text-left"><b>Tools Used:</b> Azure Data Factory, Azure Databricks, PySpark, Azure
+                    Synapse Analytics, Power BI</h5>
+                  <br />
+                  <p style="text-align: left;">
+                    Designed and implemented a scalable data pipeline using Azure services for ingesting, transforming,
+                    and storing data. Connected the final outputs to Power BI for dynamic, business-ready
+                    visualizations.
+                  </p>
+                </div>
+              </div>
+
+              <!-- BACK -->
+              <div class="flip-card-back">
+                <div class="card-content p-4 shadow-sm rounded-4 bg-white text-start">
+                  <h5 class="mb-3"><b>Key Insights:</b></h5>
+                  <ul class="mb-4">
+                    <li><b>End-to-End Data Pipeline:</b> Built with Azure Data Factory, Databricks, and Synapse for
+                      streamlined ETL and analytics.</li>
+                    <li><b>Data Visualization:</b> Integrated the processed data into Power BI dashboards to enable
+                      accessible, real-time reporting.</li>
+                  </ul>
+
+                  <h5 class="mb-3"><b>Output:</b></h5>
+                  <ul>
+                    <li>Automated ingestion and transformation from multiple raw sources</li>
+                    <li>Optimized large dataset processing with PySpark</li>
+                    <li>Fast querying using Azure Synapse's analytical engine</li>
+                    <li>Interactive business dashboards using Power BI</li>
+                  </ul>
+                  <a href="https://github.com/Kani042/DataEngineer-project" class="btn btn-animated mt-4">Learn more</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 6 -->
+        <!-- Project Card 6 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+
+              <!-- FRONT -->
+              <div class="flip-card-front">
+                <div class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
+                  <img src="assets/images/project6.png" class="img-fluid mb-3 rounded" alt="LEGO Dashboard Project" />
+                  <h6 class="fw-bold text-left text-muted">LEGO Sets Explorer Dashboard</h6>
+                  <br />
+                  <h5 class="mb-2 text-left"><b>Tools Used:</b> Power BI, DAX, Power Query, Data Modeling</h5>
+                  <br />
+                  <p style="text-align: left;">
+                    Developed an interactive Power BI dashboard to explore LEGO sets by theme, category, and age range.
+                    Built a relational model and DAX measures to enable filtering, KPIs, and price comparisons across
+                    thousands of sets.
+                  </p>
+                </div>
+              </div>
+
+              <!-- BACK -->
+              <div class="flip-card-back">
+                <div class="card-content p-4 shadow-sm rounded-4 bg-white text-start">
+                  <h5 class="mb-3"><b>Key Insights:</b></h5>
+                  <ul class="mb-4">
+                    <li><b>KPI Metrics:</b> Displayed total sets, average pieces, and average price</li>
+                    <li><b>Interactive Filters:</b> Users can filter by theme group, theme, and age range</li>
+                  </ul>
+
+                  <h5 class="mb-3"><b>Output:</b></h5>
+                  <ul>
+                    <li>Fully responsive dashboard for LEGO set exploration</li>
+                    <li>Calculated measures for price and piece distribution</li>
+                    <li>Visual cue card displays selected set image and price</li>
+                  </ul>
+                  <a href="https://github.com/Kani042/PowerBI_Lego" class="btn btn-animated mt-4">Learn more</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title d-inline-block">Experience</h2>
+      </div>
+      <div class="timeline">
+        <!-- Timeline Item -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5 class="mb-1 fw-bold">Data Analyst Intern @ Victoria Solutions</h5>
+            <small class="text-muted">2025 - April - May </small>
+            <p>
+              Worked on building ETL pipelines, sales performance analysis, and customer loyalty segmentation
+              using Azure cloud services, PySpark, Power BI, and Tableau. Focused on data ingestion, transformation,
+              KPI generation, customer segmentation (RFM analysis), and business insights to support
+              decision-making.<br><br>
+              <b>Skills/Tools:</b> Azure Data Factory, Azure Databricks, PySpark, Azure Synapse Analytics, Power BI,
+              Tableau,
+              Data Cleaning, RFM Analysis, Customer Segmentation
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5 class="mb-1 fw-bold">Senior Software Engineer @ Cognizant Technologies</h5>
+            <small class="text-muted">2018 – 2022</small>
+            <p>
+              Developed Tableau reports for tracking access requests, integrated with SQL databases for compliance and
+              audit purposes. Created data visualizations to support security monitoring. Built scalable full-stack
+              solutions using Java, ReactJS, SQL, and RESTful APIs, and designed secure, optimized system architectures
+              with a focus on performance, encryption, and efficient database queries.<br><br>
+              <b>Skills/Tools:</b> Tableau, SQL, Java, ReactJS, RESTful APIs, System Architecture, Data Visualization,
+              Performance Optimization, Data Encryption
+            </p>
+          </div>
+        </div>
+
+        <!-- Dummy Entry 1 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5 class="mb-1 fw-bold">Software Engineer @ TCS</h5>
+            <small class="text-muted">2017 – 2018</small>
+            <p>
+              Collaborated with clients to gather business requirements aligned with OFAC compliance standards. Designed
+              and developed a scalable settlement application using Mainframe technologies (Natural/ADABAS). Managed
+              end-to-end SDLC activities, integrated with external systems, optimized data flow, and ensured regulatory
+              compliance through rigorous testing and post-deployment support.<br><br>
+              <b>Skills/Tools:</b> Natural, ADABAS, Mainframe Technologies, SDLC, System Integration, Compliance
+              Testing, Performance Optimization
+            </p>
+          </div>
+        </div>
+
+        <!-- Dummy Entry 2 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5 class="mb-1 fw-bold"> Software Engineer @ Core Mind Technologies</h5>
+            <small class="text-muted">2015 – 2017</small>
+            <p>
+              Analyzed mainframe system architecture and designed modular COBOL components to integrate with modern
+              financial systems. Developed high-performance applications using COBOL, DB2, and CICS, migrated legacy IMS
+              databases to DB2, and automated batch processing using CA7. Conducted thorough testing and provided 24/7
+              post-deployment support to ensure optimal system performance and data integrity.<br><br>
+              <b>Skills/Tools:</b> COBOL, DB2, CICS, CA7, Batch Processing, Data Migration, Mainframe Systems, Testing &
+              QA, System Optimization
+            </p>
+          </div>
+        </div>
+
+        <!-- Dummy Entry 3 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5 class="mb-1 fw-bold">Software Engineer @ HCL Technologies</h5>
+            <small class="text-muted">2011 – 2013</small>
+            <p>
+              Designed and developed a scalable financial transaction system using COBOL on Mainframe, ensuring
+              regulatory compliance. Participated in all phases of the SDLC, conducted unit testing, debugged issues,
+              and collaborated with QA teams for thorough system testing. Automated batch processes with CA7, ensured
+              error-free financial transaction execution, and provided post-deployment support to optimize system
+              performance.<br><br>
+              <b>Skills/Tools:</b> COBOL, Mainframe, CA7, SDLC, Testing & Debugging, Job Automation, System
+              Optimization, Agile Collaboration
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 text-center bg-white">
+    <div class="container">
+      <!-- Heading -->
+      <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="section-title d-inline-block">Contact</h2>
+      </div>
+
+      <!-- Intro text -->
+      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+        Let's collaborate! Reach out via
+        <a href="mailto:kanimozhi042@gmail.com" class="text-purple-600 fw-semibold">email</a>,
+        <a href="https://www.linkedin.com/in/kanimozhi-subramanian-29745143/" target="_blank"
+          class="text-purple-600 fw-semibold">LinkedIn</a>
+      </p>
+
+      <!-- Download Button -->
+      <a href="assets/pdf/Data Analyst_Kanimozhi.pdf" class="btn btn-primary px-4 py-2 rounded-pill mb-4" download
+        data-aos="zoom-in" data-aos-delay="200">
+        Download Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row align-items-start">
+        <!-- Left Column -->
+        <div class="col-md-6 mb-4">
+          <h5 class="fw-bold text-uppercase">Kanimozhi Subramanian</h5>
+          <p class="small mb-0">
+            Data Scientist| Data Analyst| Data Engineer
+          </p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6 mb-4 text-md-end text-start">
+          <h6 class="fw-bold text-uppercase">Social</h6>
+          <div class="d-flex gap-3 justify-content-md-end justify-content-start mt-2">
+            <a href="https://www.linkedin.com/in/kanimozhi-subramanian-29745143/" target="_blank"
+              class="text-white fs-5"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Kani042" target="_blank" class="text-white fs-5"><i
+                class="fab fa-github"></i></a>
+            <a href="https://twitter.com/yourtwitter" target="_blank" class="text-white fs-5"><i
+                class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-light" />
+      <div class="text-center small">© Copyright 2025.</div>
+    </div>
+  </footer>
+  <button id="backToTop" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const wave = document.querySelector(".wave");
+      const scrollY = window.scrollY;
+      wave.style.transform = `translateY(${scrollY * 0.2
+        }px) translateX(-20%)`;
+    });
+  </script>
+  <script>
+    // Show button on scroll
+    const topBtn = document.getElementById("backToTop");
+
+    window.onscroll = function () {
+      if (
+        document.body.scrollTop > 300 ||
+        document.documentElement.scrollTop > 300
+      ) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    // Scroll to top when clicked
+    topBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
