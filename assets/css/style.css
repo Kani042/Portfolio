@@ -382,7 +382,7 @@
 .flip-card {
   background-color: transparent;
   width: 100%;
-  height: 720px; /* Fixed height to avoid shift */
+  height: 700px; /* Fixed height to avoid shift */
   perspective: 1000px;
   cursor: pointer;
 }
